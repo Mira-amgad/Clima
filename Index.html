@@ -16,21 +16,34 @@
   <body>
     <div class="Container">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" placeholder="search" />
+        <form class="form" id="form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="form-input"
+            id="form-input"
+          />
+          <input type="submit" placeholder="search" class="form-button" />
         </form>
       </header>
+      <main>
+        <div class="data">
+          <div>
+            <h1 class="city" id="city">Cairo</h1>
 
-      <h1>Cairo</h1>
-
-      <div>
-        <p>
-          Monday 21:04, few clouds <br />
-          Humidity: 85%, Wind: 5.66km/h
-        </p>
-      </div>
-      <div>☁️10°C</div>
+            <p class="details">
+              Monday 21:04, few clouds <br />
+              Humidity: <strong>85%</strong>, Wind: <strong>5.66km/h</strong>
+            </p>
+          </div>
+          <div class="temperature">
+            <div class="icon">☁️</div>
+            <div class="value">10</div>
+            <div class="unit">°C</div>
+          </div>
+        </div>
+      </main>
       <footer>
         This project was coded by
         <a href="https://github.com/Mira-amgad" target="_blank">Mira Amgad</a> ,
@@ -42,5 +55,6 @@
         >
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
