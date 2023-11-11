@@ -1,0 +1,15 @@
+body {
+  background-color: #f5f2fb;
+}
+
+.Container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 60px 80px;
+  background-color: white;
+  box-shadow: 0 30px 50px rgba(30, 50, 60, 0.8);
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
