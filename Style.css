@@ -65,10 +65,9 @@ main {
   display: flex;
   font-size: 20px;
 }
-#icon {
-  width: 60px;
-  height: 98px;
-  margin-top: 12px;
+.weather-app-icon {
+  width: 70px;
+  margin-top: 10px;
 }
 .value {
   font-size: 70px;

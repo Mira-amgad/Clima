@@ -34,7 +34,7 @@ function updateWeather(response) {
   let icon = document.querySelector("#icon");
 
   let url = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
-  icon.innerHTML = `<img src="${url}"/>`;
+  icon.innerHTML = `<img src="${url}"class="weather-app-icon"/>`;
 }
 
 function Search(city) {
