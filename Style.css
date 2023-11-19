@@ -65,17 +65,19 @@ main {
   display: flex;
   font-size: 20px;
 }
-.icon {
-  font-size: 40px;
+#icon {
+  width: 60px;
+  height: 98px;
   margin-top: 12px;
 }
 .value {
-  font-size: 60px;
+  font-size: 70px;
+  line-height: 88px;
   font-weight: bold;
 }
 .unit {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 28px;
+  margin-top: 6px;
 }
 footer {
   border-top: 1px solid #f5f2fb;

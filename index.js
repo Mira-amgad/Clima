@@ -30,6 +30,11 @@ function updateWeather(response) {
 
   let time = document.querySelector("#time");
   time.innerHTML = `${day} ${hours}:${min}`;
+
+  let icon = document.querySelector("#icon");
+
+  let url = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
+  icon.innerHTML = `<img src="${url}"/>`;
 }
 
 function Search(city) {
