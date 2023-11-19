@@ -54,6 +54,7 @@ main {
   line-height: 20px;
   color: rgba(39, 33, 66, 0.4);
   font-weight: 500;
+  line-height: 24px;
 }
 .details strong {
   color: #f65282;
@@ -66,8 +67,8 @@ main {
   font-size: 20px;
 }
 .weather-app-icon {
-  width: 70px;
-  margin-top: 10px;
+  width: 88px;
+  height: 88px;
 }
 .value {
   font-size: 70px;
