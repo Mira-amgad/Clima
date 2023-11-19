@@ -1,8 +1,35 @@
 function updateWeather(response) {
   let temp = document.querySelector("#value");
   let city = document.querySelector("#city");
+
   city.innerHTML = response.data.name;
   temp.innerHTML = Math.round(response.data.main.temp);
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = response.data.wind.speed;
+
+  let now = new Date();
+  let hours = now.getDate();
+  let min = now.getMinutes();
+  if (min < 10) {
+    min = `0${min}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+
+  let time = document.querySelector("#time");
+  time.innerHTML = `${day} ${hours}:${min}`;
 }
 
 function Search(city) {

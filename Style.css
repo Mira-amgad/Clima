@@ -58,6 +58,9 @@ main {
 .details strong {
   color: #f65282;
 }
+#humidity {
+  color: #f65282;
+}
 .temperature {
   display: flex;
   font-size: 20px;
